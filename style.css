@@ -1,0 +1,126 @@
+:root {
+    --gradient_start : rgb(153, 0, 204, 0.2);
+    --gradient_end : rgba(255, 139, 255, 0.166); 
+    --bg_darkness : rgba(0, 0, 0, 0.75);
+    --light_purple : rgb(107, 83, 151);
+    --border_color_one : rgb(216, 185, 255);
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    text-decoration: none;
+}
+.bg {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width : 1920px;
+    min-height : 1080px;
+    width: 100vw;
+    height: 100vh;
+}
+.bg_darkness {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color : var(--bg_darkness);
+}
+.bg_gradient {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width : 100%;
+    height : 100%;
+    background-image: linear-gradient(to bottom right, var(--gradient_start), var(--gradient_end));
+}
+.my_description {
+    position: relative;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(50, 50, 50);
+    border: 0.15rem solid var(--border_color_one);
+    color: white;
+    padding: 2.5rem;
+    margin: 2.5rem;
+}
+.description_title {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-align: center  ;
+}
+.description_content {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+.data_container {
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--light_purple);
+    border: 0.15rem solid var(--border_color_one);
+    width : fit-content;
+    min-height: 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my_gallery {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+.my_gallery.for_two {
+    grid-template-columns: 1fr 1fr;
+}
+
+.artwork {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 15rem;
+    max-height: 15rem;
+    border: 0.15rem solid var(--border_color_one);
+}
+.artwork.v2 {
+    max-width: 33.75rem;
+}
+
+
+.my_gallery_two_columns {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding: 40px;
+}
+
+.my_avatar {
+    display: block;
+    width: fit-content;
+    height: auto;
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.15rem solid var(--border_color_one);
+    border-radius: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
