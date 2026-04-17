@@ -94,12 +94,20 @@
     position: relative;
     width: 100%;
     height: auto;
-    max-width: 15rem;
-    max-height: 15rem;
+    max-width: 22.5rem;
+    max-height: 22.5rem;
     border: 0.15rem solid var(--border_color_one);
 }
 .artwork.v2 {
     max-width: 33.75rem;
+}
+.artwork.size_540x540 {
+    max-width: 33.75rem;
+    max-height: 35.75rem;
+}
+.artwork.size_360x540 {
+    max-width: 22.5rem;
+    max-height: 35.75rem;
 }
 
 
