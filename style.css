@@ -109,6 +109,10 @@
     max-width: 22.5rem;
     max-height: 35.75rem;
 }
+.artwork.size_240x240 {
+    max-width: 15rem;
+    max-height: 15rem;
+}
 
 
 .my_gallery_two_columns {
