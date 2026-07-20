@@ -113,6 +113,10 @@
     max-width: 15rem;
     max-height: 15rem;
 }
+.artwork.size_400x500 {
+    max-width: 25rem;
+    max-height: 31.25rem;
+}
 
 
 .my_gallery_two_columns {
