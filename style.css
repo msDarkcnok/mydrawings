@@ -94,8 +94,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    max-width: 22.5rem;
-    max-height: 22.5rem;
+    max-width: 25rem;
+    max-height: 25rem;
     border: 0.15rem solid var(--border_color_one);
 }
 .artwork.v2 {
