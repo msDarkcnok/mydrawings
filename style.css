@@ -89,6 +89,10 @@
 .my_gallery.for_two {
     grid-template-columns: 1fr 1fr;
 }
+.my_gallery.for_one {
+    display: flex;
+    flex-direction: column;
+}
 
 .artwork {
     position: relative;
@@ -108,8 +112,8 @@
 }
 
 .artwork.v4 {
-    width : 60rem;
-    height: 90rem;
+    width: auto;
+    height: auto;
 }
 
 
