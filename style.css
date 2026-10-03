@@ -69,22 +69,23 @@
     margin-bottom: 2rem;
     background-color: var(--light_purple);
     border: 0.15rem solid var(--border_color_one);
-    width : fit-content;
-    min-height: 3rem;
+    width: 60rem;
+    min-height: fit-content;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .my_gallery {
+    display: grid;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
+    gap : 1rem;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 .my_gallery.for_two {
     grid-template-columns: 1fr 1fr;
@@ -96,17 +97,20 @@
 
 .artwork {
     position: relative;
-    width : 360px;
-    height : 360px;
-
+    width : 22.5rem;
+    height : 22.5rem;
     border: 0.15rem solid var(--border_color_one);
 }
-
+.artwork_style {
+    margin-bottom : 2rem;
+    border: 0.25rem solid var(--border_color_one);
+}
 
 .single_artwork {
     margin-left: auto;
     margin-right: auto;
     border: 0.25rem solid var(--border_color_one);
+    width: fit-content
 }
 .single_artwork.r1_1 {
     width: 30rem;
@@ -154,4 +158,10 @@
     border-radius: 5rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+.artwork_list {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
